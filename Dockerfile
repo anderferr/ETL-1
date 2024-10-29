@@ -18,6 +18,10 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
 
+# Permissions
+RUN chmod -R 777 /app
+
+
 # Create a non-privileged user that the app will run under.
 # See https://docs.docker.com/go/dockerfile-user-best-practices/
 ARG UID=10001
