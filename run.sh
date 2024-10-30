@@ -5,4 +5,4 @@ docker compose up
 # pip freeze > requirements.txt
 # docker compose up --remove-orphans
 # docker compose run server pylint app.py
-# docker compose run bash
+# docker compo                                                                                                                se run bash
