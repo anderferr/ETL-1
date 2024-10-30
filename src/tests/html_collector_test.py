@@ -11,3 +11,4 @@ def test_collect_essential_information():
     assert isinstance(essential_information[0], dict)
     assert "name" in essential_information[0]
     assert "link" in essential_information[0]
+    

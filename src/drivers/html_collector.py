@@ -1,7 +1,8 @@
 from typing import List, Dict
 from bs4 import BeautifulSoup
+from src.drivers.interfaces.html_collector import HtmlCollectorInterface
 
-class HtmlCollector:
+class HtmlCollector(HtmlCollectorInterface):
     #class method because there is no self value being used to be a function method
     @classmethod
     def collect_essential_information(cls, html:str) -> List[Dict[str, str]]:
@@ -19,3 +20,4 @@ class HtmlCollector:
                 "link": links
             })
         return essential_information
+        
