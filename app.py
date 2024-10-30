@@ -5,4 +5,5 @@ def test_request_from_page():
     response = http_request.request_from_page()
     print(response)
 # test_request_from_page()
-print("it works")
+# print("it works")
+test_request_from_page()

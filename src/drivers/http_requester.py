@@ -8,7 +8,7 @@ class HttpRequester:
 
     def request_from_page(self) -> Dict[int, str]:
         response = requests.get(self.__url)
-        """Retorna dicionario com essas caracteristicas"""
+        """Return a dictionary"""
         return {
             "status_code": response.status_code,
             "html": response.text
