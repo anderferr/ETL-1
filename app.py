@@ -1,9 +1,8 @@
-"""importando as libs"""
-from fastapi import FastAPI
+from src.drivers import http_requester
 
-app = FastAPI()
-
-@app.get("/")
-async def root():
-    """return value"""
-    return {"message": "Hello World"}
+def test_request_from_page():
+    http_request = http_requester.HttpRequester()
+    response = http_request.request_from_page()
+    print(response)
+# test_request_from_page()
+print("it works")
