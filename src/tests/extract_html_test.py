@@ -4,8 +4,6 @@ from src.stages.contracts.extract_contract import ExtractContract
 from src.stages.extract.extract_html import ExtractHtml
 from src.errors.extract_error import ExtractError
 
-
-
 def test_extract():
     http_requester = HttpRequesterSpy()
     html_collector = HtmlCollectorSpy()
